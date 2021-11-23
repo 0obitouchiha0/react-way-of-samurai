@@ -1,4 +1,5 @@
 import classes from './Profile.module.css';
+import MyPosts from './MyPosts/MyPosts.jsx';
 
 const Profile = () => {
   return (
@@ -11,21 +12,8 @@ const Profile = () => {
             <img src="https://www.meme-arsenal.com/memes/825b9b3ef148fbf2b20f47951e170699.jpg" alt="" />
           </div>
         </div>
-        <div className={classes.main__posts}>
-          <div className={classes.main__posts__title}>
-            My posts
-          </div>
-          <div className={classes.post}>
-            New post
-          </div>
-          <div className={classes.post}>
-            post1
-          </div>
-          <div className={classes.post}>
-            post2
-          </div>
-        </div>
-      </main>
+        <MyPosts />
+    </main>
   )
 }
 
