@@ -1,0 +1,22 @@
+.main {
+  grid-area: main;
+  background-color: purple;
+}
+
+.main__header {
+  width: 100%;
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.main__header img {
+  width: 100%;
+}
+
+.main__avatar {
+  margin: 10px;
+}
+
+.main__posts {
+  padding-left: 10px;
+}
