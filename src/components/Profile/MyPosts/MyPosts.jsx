@@ -7,10 +7,10 @@ const MyPosts = () => {
       <div className={classes.main__posts__title}>
         My posts
       </div>
-      <Post />
-      <Post />
-      <Post />
-      <Post />
+      <Post text="post 1" likeCount="21"/>
+      <Post text="post 2" likeCount="2"/>
+      <Post text="post 3" likeCount="1"/>
+      <Post text="post 4" likeCount="241"/>
     </div>
   )
 }

@@ -1,14 +1,14 @@
-import './Nav.module.css';
+import classes from './Nav.module.css';
 
 const Nav = () => {
   return (
     <nav>
         <ul>
           <li>
-            <a href=""> Profile</a>
+            <a href="/Profile" className="active"> Profile</a>
           </li>
           <li>
-            <a href=""> Messages</a>
+            <a href="/Dialogs"> Messages</a>
           </li>
           <li>
             <a href=""> News</a>
