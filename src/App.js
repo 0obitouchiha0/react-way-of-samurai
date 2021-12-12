@@ -4,21 +4,28 @@ import './App.css';
 import Header from './components/Header/Header.jsx';
 import Nav from './components/Nav/Nav.jsx';
 import Profile from './components/Profile/Profile.jsx';
-import Dialogs from './components/Dialogs/Dialogs.jsx';
+import UsersContainer from './components/Users/UsersContainer.jsx';
+import DialogsContainer from './components/Dialogs/DialogsContainer.jsx';
 
-const App = () => {
+const App = (props) => {
   return (
     <BrowserRouter>
       <div className="container">
         <Header />
         <Nav />
         <Routes>
-          <Route path="/" element={<Dialogs />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/dialogs" element={<Dialogs />} />
-          <Route path="/news" element={<Profile />} />
-          <Route path="/music" element={<Dialogs />} />
-          <Route path="/settings" element={<Profile />} />
+          <Route path="/" element={
+            <DialogsContainer />}
+          />
+          <Route path="/profile" element={
+            <Profile />}
+          />
+          <Route path="/dialogs" element={
+            <DialogsContainer />}
+          />
+          <Route path="/users" element={
+            <UsersContainer />}
+          />
         </Routes>
       </div>
     </BrowserRouter>

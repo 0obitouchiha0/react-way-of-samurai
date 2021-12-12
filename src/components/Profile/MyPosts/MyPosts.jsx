@@ -1,16 +1,30 @@
+import React from 'react';
 import classes from './MyPosts.module.css';
 import Post from './Post/Post.jsx';
 
-const MyPosts = () => {
+const MyPosts = (props) => {
+  let postsData = props.post;
+
+  let postsElements = postsData.map(item => {
+    return <Post id={item.id} text={item.text} likesCount={item.likesCount}/>
+  })
+
+  let postText = React.createRef();
+  const addNewPost = () => {
+    props.addPost(postText);
+  }
+  
+  const change = () => {
+    props.addLetter(postText);
+  }
   return (
     <div className={classes.main__posts}>
       <div className={classes.main__posts__title}>
         My posts
       </div>
-      <Post text="post 1" likeCount="21"/>
-      <Post text="post 2" likeCount="2"/>
-      <Post text="post 3" likeCount="1"/>
-      <Post text="post 4" likeCount="241"/>
+      <textarea ref={postText} onChange={change} value={props.value}/>
+      <button onClick={addNewPost}>add post</button>
+      {postsElements}
     </div>
   )
 }

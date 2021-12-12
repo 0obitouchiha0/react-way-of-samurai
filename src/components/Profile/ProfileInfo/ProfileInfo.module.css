@@ -1,0 +1,18 @@
+.main__header {
+  width: 100%;
+  max-height: 100px;
+  overflow: hidden;
+  opacity: 0.5;
+}
+
+.main__header img {
+  width: 100%;
+}
+
+.main__avatar {
+  margin: 10px;
+}
+
+.main__avatar img {
+  width: 100px;
+}

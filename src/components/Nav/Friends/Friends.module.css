@@ -1,0 +1,25 @@
+.friends {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.friends ul {
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+  grid-template-areas: 'li li li';
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+
+.friends ul li {
+  grid-area: 'li';
+  cursor: pointer;
+}
+
+.friends ul li img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}

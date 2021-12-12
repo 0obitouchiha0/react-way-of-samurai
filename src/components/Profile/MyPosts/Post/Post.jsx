@@ -5,7 +5,7 @@ const Post = (props) => {
     <div className={classes.post}>
       <img src="https://static.1tv.ru/uploads/photo/image/2/huge/4062_huge_876c41f50e.jpg" alt="" />
       <p>{props.text}</p>
-      <p>like({props.likeCount})</p>
+      <p>like({props.likesCount})</p>
     </div>
   )
 }
